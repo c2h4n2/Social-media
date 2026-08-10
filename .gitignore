@@ -1,0 +1,21 @@
+node_modules
+.next
+out
+.env
+.env.local
+.DS_Store
+
+# dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# environment secrets
+.env
+.env.local
+.env.*.local
+
+# local archives
+*.zip

@@ -1,0 +1,57 @@
+export const metadata = {
+  title: "Privacy Policy",
+};
+
+export default function PrivacyPage() {
+  return (
+    <main className="legalShell">
+      <a className="legalBack" href="/">← Back to Post Doctor</a>
+      <article className="legalCard">
+        <p className="eyebrow">LEGAL</p>
+        <h1>Privacy Policy</h1>
+        <p className="legalUpdated">Last updated: August 2026</p>
+
+        <h2>What Post Doctor processes</h2>
+        <p>
+          When you use Post Doctor, you may provide an image, a written
+          description, a selected platform, goal, and tone. This information is
+          processed to generate your Post Doctor report.
+        </p>
+
+        <h2>Uploaded images</h2>
+        <p>
+          The current beta does not intentionally save uploaded images to a
+          Post Doctor database. Images are processed in memory and sent to the
+          AI service used to generate your report.
+        </p>
+
+        <h2>AI processing</h2>
+        <p>
+          Content you submit may be sent to an AI service provider for
+          processing. Do not upload content you do not have permission to use,
+          or highly sensitive information that is unnecessary for the analysis.
+        </p>
+
+        <h2>Technical information</h2>
+        <p>
+          The service may process limited technical information such as IP
+          address-derived rate-limit identifiers, request timestamps, and error
+          logs for security, abuse prevention, and service reliability.
+        </p>
+
+        <h2>Rate limiting</h2>
+        <p>
+          The beta uses a one-way hashed identifier derived from network
+          information to enforce basic usage limits. The beta is not designed
+          to use that identifier as an account or advertising profile.
+        </p>
+
+        <h2>Changes</h2>
+        <p>
+          This policy may be updated as Post Doctor adds accounts, analytics,
+          subscriptions, or other features.
+        </p>
+      </article>
+    </main>
+  );
+}
