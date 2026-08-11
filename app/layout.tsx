@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import AdSenseLoader from "@/components/AdSenseLoader";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
@@ -52,7 +53,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <AdSenseLoader />
+        {children}
+      </body>
     </html>
   );
 }

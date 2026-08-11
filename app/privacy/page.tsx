@@ -46,6 +46,23 @@ export default function PrivacyPage() {
           to use that identifier as an account or advertising profile.
         </p>
 
+
+        <h2>Advertising and cookies</h2>
+        <p>
+          Post Doctor may use third-party advertising services such as Google
+          AdSense. Advertising providers may use cookies, local storage, device
+          information, and similar technologies to deliver, measure, and improve
+          advertising. Where required, consent choices may be presented before
+          personalized advertising technologies are used.
+        </p>
+
+        <h2>Advertising partners</h2>
+        <p>
+          If advertising is enabled, third-party advertising providers may
+          process information according to their own privacy policies and the
+          choices available to you through applicable consent controls.
+        </p>
+
         <h2>Changes</h2>
         <p>
           This policy may be updated as Post Doctor adds accounts, analytics,

@@ -382,6 +382,8 @@ export default function Home() {
       <footer>
         <span>© 2026 Post Doctor</span>
         <nav>
+          <a href="/about">About</a>
+          <a href="/how-it-works">How it works</a>
           <a href="/privacy">Privacy</a>
           <a href="/terms">Terms</a>
         </nav>
