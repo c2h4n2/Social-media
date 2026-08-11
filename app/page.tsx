@@ -2,6 +2,7 @@
 
 import { ChangeEvent, useMemo, useRef, useState } from "react";
 import type { PostDoctorReport } from "@/lib/post-doctor";
+import { trackGaEvent } from "@/lib/ga";
 
 type Platform = "Instagram" | "TikTok" | "Facebook" | "X" | "LinkedIn" | "Pinterest";
 type Goal = "More followers" | "More views" | "More comments" | "Build my brand" | "Sell something";
@@ -68,6 +69,13 @@ export default function Home() {
     setError("");
     setReport(null);
 
+    trackGaEvent("post_analysis_started", {
+      mode,
+      platform,
+      goal,
+      tone,
+    });
+
     try {
       let response: Response;
 
@@ -100,6 +108,14 @@ export default function Home() {
 
       setRequestId(data.requestId || "");
       setReport(data.report);
+
+      trackGaEvent("post_analysis_completed", {
+        mode,
+        platform,
+        goal,
+        tone,
+        score: data.report?.scores?.total ?? 0,
+      });
       if (typeof data.usage?.remaining === "number") {
         setUsageRemaining(data.usage.remaining);
       }
@@ -109,7 +125,17 @@ export default function Home() {
         80
       );
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Unable to analyze your post.");
+      const message =
+        err instanceof Error ? err.message : "Unable to analyze your post.";
+
+      setError(message);
+
+      trackGaEvent("post_analysis_failed", {
+        mode,
+        platform,
+        goal,
+        tone,
+      });
     } finally {
       setLoading(false);
     }
@@ -246,7 +272,16 @@ export default function Home() {
         )}
 
         <div className="selectorGrid">
-          <SelectField label="Platform" value={platform} onChange={(v) => setPlatform(v as Platform)} options={platforms} />
+          <SelectField
+            label="Platform"
+            value={platform}
+            onChange={(v) => {
+              const nextPlatform = v as Platform;
+              setPlatform(nextPlatform);
+              trackGaEvent("platform_selected", { platform: nextPlatform });
+            }}
+            options={platforms}
+          />
           <SelectField label="Goal" value={goal} onChange={(v) => setGoal(v as Goal)} options={goals} />
           <SelectField label="Tone" value={tone} onChange={(v) => setTone(v as Tone)} options={tones} />
         </div>

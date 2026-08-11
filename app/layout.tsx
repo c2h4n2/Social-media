@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import AdSenseLoader from "@/components/AdSenseLoader";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
@@ -55,6 +56,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <AdSenseLoader />
+        <GoogleAnalytics />
         {children}
       </body>
     </html>

@@ -1,22 +1,16 @@
-# Post Doctor v6.2 — AdSense Ready
+# Post Doctor v6.3 — GA4 Analytics
 
-This version prepares the live Post Doctor site for AdSense without enabling
-ads before a real publisher ID exists.
+Adds Google Analytics 4 with privacy-conscious custom event tracking.
 
 Apply:
 
 ```bash
-unzip -o post-doctor-v6-2-adsense-ready.zip
+unzip -o post-doctor-v6-3-ga4.zip
 npm install
 npm run check
 npm run dev
 ```
 
-Review:
+Then test GA4 Realtime and deploy.
 
-- `/about`
-- `/how-it-works`
-- `/privacy`
-- `/ads.txt`
-
-Then commit/deploy and follow `ADSENSE-SETUP.md`.
+See `GA4-SETUP.md`.
