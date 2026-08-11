@@ -1,71 +1,22 @@
-# Post Doctor v6 — Deployment Layer
+# Post Doctor v6.1 — Security Patch
 
-V6 keeps the working MVP intact and adds deployment/readiness infrastructure.
+Post Doctor stays on the Next.js 15.4 branch and upgrades to `15.4.11`.
 
-## New in v6
-
-- Central environment validation
-- `/api/health` health check
-- Swappable `RateLimitProvider` interface
-- Structured, privacy-conscious server analytics
-- Request IDs returned on successful and failed analyses
-- Environment preflight script
-- Production build check
-- Deployment checklist
-
-## Apply
-
-Commit v5:
+Apply:
 
 ```bash
-git add .
-git commit -m "Post Doctor public beta protection"
-git push
-```
-
-Then extract v6:
-
-```bash
-unzip -o post-doctor-website-v6-deployment.zip
+unzip -o post-doctor-v6-1-security.zip
 npm install
+npm list next
+npm run check
 ```
 
-Keep your existing `.env.local`.
-
-Add if missing:
-
-```env
-POST_DOCTOR_ANALYTICS=true
-```
-
-Run:
+Then run locally:
 
 ```bash
 npm run dev
 ```
 
-Test:
+Test the health endpoint and both AI analysis modes before committing.
 
-```text
-http://localhost:3000/api/health
-```
-
-You should receive `status: ok`.
-
-## Before actual deployment
-
-Read:
-
-```text
-DEPLOYMENT.md
-```
-
-Then run:
-
-```bash
-npm run check
-```
-
-The next step after v6 is not more application features: deploy a private
-preview, test on real phones, and then replace the memory limiter with a durable
-shared provider before wider public traffic.
+See `SECURITY-UPGRADE.md` for the full checklist.
