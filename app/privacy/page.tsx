@@ -11,6 +11,9 @@ export default function PrivacyPage() {
         <h1>Privacy Policy</h1>
         <p className="legalUpdated">Last updated: August 2026</p>
 
+        <h2>Advertising and analytics</h2>
+        <p>Post Doctor uses Google Analytics to understand aggregate website usage and may use Google AdSense to display advertising. Google and its partners may use cookies or similar technologies to measure usage, deliver ads, limit repeated ads, and, where permitted by consent and applicable law, personalize advertising.</p>
+        <p>Visitors in regions where consent is required may be shown a consent message with choices for advertising and measurement.</p>
         <h2>What Post Doctor processes</h2>
         <p>
           When you use Post Doctor, you may provide an image, a written

@@ -966,3 +966,14 @@ footer nav {
     border-radius: 18px;
   }
 }
+
+.publisherContent{max-width:1120px;margin:64px auto 24px;padding:48px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.publisherContent>h2,.editorialSection h2,.platformGuide h2{font-size:clamp(1.65rem,3vw,2.25rem);margin:8px 0 16px}
+.contentLead{max-width:820px;font-size:1.08rem;line-height:1.75;color:var(--muted)}
+.contentGrid,.platformGuideGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:28px}
+.contentCard,.platformGuideGrid>div{padding:24px;border:1px solid var(--line);border-radius:18px;background:#fbfbfe}
+.contentCard h3,.platformGuideGrid h3{margin:0 0 10px;font-size:1.08rem}
+.contentCard p,.platformGuideGrid p,.editorialSection p{color:var(--muted);line-height:1.72;margin:0}
+.editorialSection,.platformGuide{margin-top:44px;padding-top:36px;border-top:1px solid var(--line)}
+.editorialSection p+p{margin-top:16px}.guideLinks{display:flex;flex-wrap:wrap;gap:18px;margin-top:22px}.guideLinks a{font-weight:700;color:var(--accent-dark)}
+@media(max-width:720px){.publisherContent{margin-top:36px;padding:26px 20px}.contentGrid,.platformGuideGrid{grid-template-columns:1fr}}

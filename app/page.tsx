@@ -414,6 +414,45 @@ export default function Home() {
         </section>
       )}
 
+
+      <section className="publisherContent" aria-labelledby="post-doctor-guide">
+        <p className="eyebrow">SOCIAL MEDIA GUIDE</p>
+        <h2 id="post-doctor-guide">What makes a social post worth publishing?</h2>
+        <p className="contentLead">
+          A strong social post gives people a reason to stop, understand the point quickly,
+          and take a useful next step. Post Doctor evaluates those fundamentals, while the
+          final creative decision stays with you.
+        </p>
+        <div className="contentGrid">
+          <article className="contentCard"><h3>Start with a clear hook</h3><p>The opening line, first frame, or visual idea should make the subject obvious. Specific promises, useful questions, surprising observations, and strong visual contrast can work when they accurately represent the rest of the post.</p></article>
+          <article className="contentCard"><h3>Write for the platform</h3><p>A caption that works on LinkedIn may feel unnatural on TikTok, while Instagram may need more context than X. Match pacing, detail, and the call to action to how people consume content on the selected platform.</p></article>
+          <article className="contentCard"><h3>Give people a reason to respond</h3><p>Engagement is stronger when a post invites a meaningful reaction instead of interaction for its own sake. A useful call to action can ask for an opinion, encourage a save, point to a resource, or explain a next step.</p></article>
+          <article className="contentCard"><h3>Align the visual and caption</h3><p>When an image communicates one idea and the caption another, viewers work harder to understand the post. Strong combinations reinforce the same message while letting the caption add useful context.</p></article>
+        </div>
+        <div className="editorialSection">
+          <h2>How the Post Doctor score works</h2>
+          <p>The score is a content-quality checklist, not a prediction of views or virality. It reviews hook, caption, platform fit, call to action, engagement potential, and visual alignment.</p>
+          <p>Algorithms, audience history, timing, competition, distribution, and other factors affect real performance. Post Doctor cannot know those outcomes in advance. Its purpose is to help identify common content weaknesses while a post is still editable.</p>
+        </div>
+        <div className="platformGuide">
+          <h2>Platform-by-platform posting guidance</h2>
+          <div className="platformGuideGrid">
+            <div><h3>Instagram</h3><p>Lead with a strong visual idea, make the first caption lines useful, and use hashtags as context rather than filler.</p></div>
+            <div><h3>TikTok</h3><p>Make the premise understandable immediately. Short-form video benefits from a clear opening and a payoff that matches the promise.</p></div>
+            <div><h3>Facebook</h3><p>Give readers enough context to understand why the post matters and use questions when genuine discussion would add value.</p></div>
+            <div><h3>X</h3><p>Prioritize one clear idea. Remove setup that is not necessary and make every sentence earn its place.</p></div>
+            <div><h3>LinkedIn</h3><p>Use concrete professional insight, experience, or examples. Structure longer posts so the central takeaway is easy to scan.</p></div>
+            <div><h3>Pinterest</h3><p>Favor descriptive, searchable language and visuals that clearly communicate the idea, outcome, or inspiration behind the pin.</p></div>
+          </div>
+        </div>
+        <div className="editorialSection">
+          <h2>Use AI suggestions as an editing aid</h2>
+          <p>Post Doctor can suggest captions, hooks, calls to action, keywords, and improvements, but generated text should be reviewed before publishing. Check facts, remove unsupported claims, preserve your own voice, and adapt recommendations to your audience.</p>
+          <p>Good social content still depends on original ideas, useful information, personality, and judgment. Post Doctor is designed to support that process, not replace it.</p>
+          <div className="guideLinks"><a href="/how-it-works">Learn how Post Doctor analyzes posts →</a><a href="/about">Read about Post Doctor →</a></div>
+        </div>
+      </section>
+
       <footer>
         <span>© 2026 Post Doctor</span>
         <nav>
