@@ -181,6 +181,7 @@ export default function Home() {
           />
           <span>Post Doctor</span>
         </a>
+        <nav className="topNav" aria-label="Main navigation"><a href="/guides">Guides</a><a href="/how-it-works">How it works</a><a href="/about">About</a></nav>
         <span className="beta">BETA</span>
       </header>
 
@@ -449,7 +450,7 @@ export default function Home() {
           <h2>Use AI suggestions as an editing aid</h2>
           <p>Post Doctor can suggest captions, hooks, calls to action, keywords, and improvements, but generated text should be reviewed before publishing. Check facts, remove unsupported claims, preserve your own voice, and adapt recommendations to your audience.</p>
           <p>Good social content still depends on original ideas, useful information, personality, and judgment. Post Doctor is designed to support that process, not replace it.</p>
-          <div className="guideLinks"><a href="/how-it-works">Learn how Post Doctor analyzes posts →</a><a href="/about">Read about Post Doctor →</a></div>
+          <div className="guideLinks"><a href="/guides">Browse social media guides →</a><a href="/how-it-works">Learn how Post Doctor analyzes posts →</a><a href="/about">Read about Post Doctor →</a></div>
         </div>
       </section>
 
@@ -457,6 +458,7 @@ export default function Home() {
         <span>© 2026 Post Doctor</span>
         <nav>
           <a href="/about">About</a>
+          <a href="/guides">Guides</a>
           <a href="/how-it-works">How it works</a>
           <a href="/privacy">Privacy</a>
           <a href="/terms">Terms</a>

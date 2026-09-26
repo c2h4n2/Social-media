@@ -1,0 +1,62 @@
+export type Guide = { slug:string; title:string; description:string; intro:string; sections:{heading:string; paragraphs:string[]}[]; takeaways:string[] };
+
+export const guides: Guide[] = [
+{
+ slug:'instagram-captions', title:'How to Write Better Instagram Captions', description:'A practical guide to clearer Instagram captions, stronger openings, useful context, and natural calls to action.',
+ intro:'Instagram captions work best when they add something the image or video cannot communicate on its own. The goal is not to make every caption long; it is to make every line useful.',
+ sections:[
+  {heading:'Make the first lines earn attention', paragraphs:['The beginning of a caption appears before a reader chooses to continue. Start with the point, a concrete observation, or a question that genuinely frames the post. Avoid spending the opening on generic setup that could apply to almost anything.','A useful test is to read only the first sentence and ask whether a stranger could tell what the post is about. If not, tighten the setup or move the most specific detail earlier.']},
+  {heading:'Add context instead of describing the picture', paragraphs:['If viewers can already see a cup of coffee, repeating “coffee time” adds little. A stronger caption can explain why the moment matters, share a lesson, tell a short story, or give information that changes how the visual is understood.','For businesses, context can include the problem a product solves, how it is made, who it is for, or a realistic use case. For personal posts, a small detail or point of view often makes the caption feel more human.']},
+  {heading:'Use calls to action selectively', paragraphs:['A call to action should fit the post. Ask for a response when the audience can contribute something meaningful, suggest saving a post when it contains information worth revisiting, or point to a link when there is a clear next step.','Not every post needs an instruction. A forced “comment below” can weaken an otherwise natural caption. Clarity and relevance matter more than adding an engagement prompt to every post.']},
+  {heading:'Treat hashtags as labels, not the main message', paragraphs:['Hashtags can describe a topic or niche, but they should not replace clear writing. Use terms that genuinely match the content and avoid stuffing unrelated tags into a caption simply because they are popular.','Platform behavior changes over time, so focus first on readable copy and descriptive language. Those fundamentals remain useful even as discovery features evolve.']}
+ ], takeaways:['Lead with the most specific or useful idea.','Let the caption add information the visual cannot.','Use a call to action only when there is a meaningful next step.','Keep hashtags relevant to the actual post.']
+},
+{
+ slug:'tiktok-hooks', title:'TikTok Hooks: How to Make the Premise Clear Fast', description:'Learn how to write and structure TikTok hooks without relying on vague clickbait.',
+ intro:'A TikTok hook is the opening idea that helps a viewer understand why the video may be worth watching. Strong hooks create clarity and curiosity without promising something the video never delivers.',
+ sections:[
+  {heading:'State the premise early', paragraphs:['Viewers should not need a long introduction before they understand the subject. Show the result, name the problem, introduce the experiment, or make the central question clear near the beginning.','This does not mean every video needs loud text or a dramatic claim. A calm, specific opening can work when it immediately establishes what is happening and who it is relevant to.']},
+  {heading:'Match the hook to the payoff', paragraphs:['A hook creates an expectation. If the opening promises a comparison, the video should actually compare the options. If it promises a tutorial, the viewer should receive steps they can use.','Mismatched hooks may create an initial pause but can damage trust. Write the opening after you know the actual payoff so the promise and the content stay aligned.']},
+  {heading:'Remove unnecessary setup', paragraphs:['Introductions, disclaimers, and background can often move later. Review the first few lines of a script and ask which words a new viewer truly needs in order to follow the idea.','For demonstrations, showing the action while explaining it can be more efficient than explaining everything before anything happens.']},
+  {heading:'Use on-screen text as support', paragraphs:['On-screen text can make the topic understandable without sound and reinforce important details. Keep it readable, concise, and consistent with what the viewer sees and hears.','Do not crowd the opening with multiple competing messages. One clear promise is usually easier to process than several unrelated claims.']}
+ ], takeaways:['Make the topic understandable immediately.','Promise only what the video actually delivers.','Move nonessential setup later.','Use text to reinforce, not compete with, the video.']
+},
+{
+ slug:'social-media-cta', title:'Calls to Action That Fit the Post', description:'A guide to choosing social-media calls to action that are useful, specific, and appropriate to the content.',
+ intro:'A call to action is simply a next step. The best one depends on what the post gives the audience and what you reasonably want an interested person to do next.',
+ sections:[
+  {heading:'Match the action to the value', paragraphs:['If a post teaches a repeatable process, saving it may be a natural next step. If it raises a genuine question, discussion may make sense. If it introduces a product, learning more may be more appropriate than asking for a generic comment.','The action should feel like a continuation of the content rather than a separate demand added at the end.']},
+  {heading:'Be specific without being pushy', paragraphs:['“Tell me which option you would use and why” gives a reader more direction than “engage with this post.” Specificity helps people understand what kind of response would be useful.','Avoid stacking several actions at once. Asking someone to like, comment, save, share, follow, and click creates noise. Choose the one next step that matters most.']},
+  {heading:'Know when no CTA is better', paragraphs:['Some posts are complete without an instruction. A personal story, announcement, or concise observation can end naturally. Adding a forced prompt may make the post feel less authentic.','Think of a CTA as an editorial choice, not a required field. Use it when it improves the experience for the reader or supports a real business or communication goal.']}
+ ], takeaways:['Choose one primary next step.','Connect the CTA to the value of the post.','Use specific language.','Skip the CTA when the post does not need one.']
+},
+{
+ slug:'hashtag-strategy', title:'A Practical Hashtag and Keyword Strategy', description:'Use hashtags and descriptive keywords as context without letting them overwhelm your social post.',
+ intro:'Hashtags and keywords can help label a topic, but they cannot rescue unclear content. Start with a strong post, then use descriptive terms that accurately reflect what it contains.',
+ sections:[
+  {heading:'Describe the actual subject', paragraphs:['Choose words a person could reasonably use to describe the post: the topic, activity, product type, location when relevant, audience, or specific technique. This keeps metadata aligned with the content.','Broad popular terms may reach a large category but can also be less precise. More specific language often does a better job of telling both people and systems what the post is about.']},
+  {heading:'Write naturally first', paragraphs:['Keywords are most useful when they fit normal language. A caption should still make sense to a person who knows nothing about optimization. Repeating the same phrase unnaturally makes the copy harder to read.','Use clear nouns and verbs where they help. If the post is a tutorial, name what is being taught. If it reviews a product category, describe the category accurately.']},
+  {heading:'Review relevance before publishing', paragraphs:['Remove tags that were added only because they are trending but do not match the post. Irrelevant labels can set the wrong expectation and make the post feel unfocused.','Discovery systems and platform features change, so avoid treating any fixed hashtag count as a permanent rule. Relevance and clarity are safer principles to build around.']}
+ ], takeaways:['Use terms that accurately describe the post.','Prefer natural language over keyword repetition.','Avoid unrelated trending tags.','Treat hashtags as supporting context, not the content itself.']
+},
+{
+ slug:'content-ideas', title:'How to Turn One Idea Into Better Social Content', description:'A repeatable method for developing useful social posts from a single topic without posting empty filler.',
+ intro:'Content ideation becomes easier when you stop asking for endless random ideas and start looking at one useful subject from several audience-focused angles.',
+ sections:[
+  {heading:'Start with a real audience question', paragraphs:['Write down the questions people ask before buying, trying, learning, or deciding something in your niche. Each question can become a demonstration, checklist, comparison, explanation, story, or example.','Specific questions usually produce stronger posts than broad themes because they give the content a clear job to do.']},
+  {heading:'Change the format, not just the wording', paragraphs:['One useful idea can become a short demonstration, a before-and-after example, a list of mistakes, a personal lesson, a FAQ, or a deeper tutorial. Each format should add a different way to understand the subject.','Avoid publishing several near-identical posts with only the hook changed. Repetition is more valuable when each version serves a distinct purpose or audience need.']},
+  {heading:'Build from evidence and experience', paragraphs:['Original examples, observations, results, photos, processes, and lessons make content harder to replace with generic advice. When possible, show what you actually did or explain how you reached a conclusion.','If you use AI to brainstorm, treat the output as a draft. Add firsthand details, verify claims, and remove suggestions that do not fit your real experience.']}
+ ], takeaways:['Begin with a concrete audience question.','Explore different formats around the same useful subject.','Add firsthand examples and specific details.','Use AI for drafting, then apply human review and experience.']
+},
+{
+ slug:'linkedin-posts', title:'Writing Clearer LinkedIn Posts', description:'Structure professional social posts around useful insight, evidence, and readable formatting.',
+ intro:'LinkedIn posts can be conversational without becoming vague. Strong professional posts usually have a clear takeaway, enough context to support it, and a reason the lesson matters to the intended reader.',
+ sections:[
+  {heading:'Lead with the useful point', paragraphs:['You do not need to reveal every conclusion in the first sentence, but readers should understand the topic quickly. A specific result, lesson, mistake, or question gives the post direction.','Avoid openings that could introduce almost any topic. The more concrete the first lines are, the easier it is for the right reader to decide whether to continue.']},
+  {heading:'Support claims with context', paragraphs:['If you describe a result, explain enough about the situation for the reader to interpret it. Time period, constraints, process, or sample size may matter depending on the claim.','Distinguish personal experience from universal advice. “This worked in our launch” is different from claiming that the same tactic always works for every company.']},
+  {heading:'Format for scanning', paragraphs:['Short paragraphs and clear transitions help readers follow a longer post on a small screen. Use lists when the information is genuinely sequential or categorical, not simply to manufacture visual rhythm.','Edit repeated setup and keep examples close to the point they support. Read the post once only for structure before polishing individual sentences.']}
+ ], takeaways:['Make the professional takeaway clear early.','Give readers enough context to judge claims.','Separate experience from universal advice.','Use formatting to improve comprehension.']
+}
+];
+
+export function getGuide(slug:string){ return guides.find((g)=>g.slug===slug); }
